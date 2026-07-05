@@ -11,7 +11,7 @@ from langchain_core.tools import tool
 load_dotenv()
 
 # Set the correct environment variable for Google/Gemini
-os.environ["GOOGLE_API_KEY"] = "AQ.Ab8RN6IWPjUIFux-Tf_blq4IFek_LALrhsl-AU6uqCTi24fX3g"  # Replace with your actual key
+os.environ["GOOGLE_API_KEY"] = ""  # Replace with your actual key
 
 embeddingmodel = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-V2")
 qdrant_client = QdrantClient(":memory:")
